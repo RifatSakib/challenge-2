@@ -74,13 +74,14 @@ line-height: 22px;
 .text-white{
    color:  rgb(255, 255, 255); 
 }
+
 .navbar{
     display: flex;
+    width: 66.25rem;
     justify-content: space-between;
     align-items: center;
-    width: 66.25rem;
     margin: 7.18rem auto;
-
+border: 2px solid red;
 }
 .nav-border{
     box-sizing: border-box;
@@ -225,9 +226,11 @@ margin-top: 25rem;
 
 @media screen and (max-width: 576px) {
 
-    /* nav{
-        flex-direction: column;
-    } */
+    .navbar,.banner{
+    
+        width: 100%;
+     
+    }
 
     .nav-link{
         display: none;
@@ -242,7 +245,7 @@ margin-top: 25rem;
         
         width: 3.75rem;
         height: 3.75rem;
-        margin: 0px 50px;
+        margin: 0px 10px;
     
 
     }
