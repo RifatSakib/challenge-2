@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+/* shared style */
+.btn-primary {
+
+border-radius: 42px;
+background: rgb(230, 83, 60);
+padding: 16px 40px 16px 40px;
+border: none;
+color: white;
+font-size: 1.01rem ;
+font-weight: 600;
+line-height: 22px;
+}
+
+.btn-secondary {
+
+    border-radius: 42px;
+   background: transparent;
+    padding: 16px 40px 16px 40px;
+   border: 1px solid white;
+    color: rgb(255, 255, 255);
+    font-size: 1.01rem ;
+    font-weight: 600;
+    line-height: 22px;
+    }
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .display-flex{
+    display: flex;
+}
+
+.bg-black{
+    background: linear-gradient(180.00deg, rgb(0, 0, 0),rgba(119, 119, 119, 0) 800%);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    
+  
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-justify{
+
+    text-align: justify;
+}
+  /* ----- */
+
+
+/* navbar stytle */
+  .brand-name{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 80%;
+
+    
+  }
+
+
+
+
+
+.text-white{
+   color:  rgb(255, 255, 255); 
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    width: 66.25rem;
+    height: 46px;
+    margin: 57px auto auto auto;
+
+}
+.nav-border{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 8px;
+}
+
+.nav-logo{
+    display: none;
+}
+.nav-link{
+    text-decoration: none;
+    Font-weight: 400;
+    Font-size: 1.12rem;
+    line-height: 140%;
+}
+
+.nav-item{
+     list-style: none;
+     margin-right: 30px;
+}
+
+.home-btn{
+        border-radius: 46px;
+        background: rgb(230, 83, 60);
+        padding: 8px 20px 8px 20px;
+}
+
+
+
+/* banner style */
+
+.banner{
+
+    
+    width: 66.25rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 4rem;
+}
+.banner-content{
+    width: 32.5rem;
+    /* text-decoration: justify; */
+}
+
+.banner-title{
+
+    font-size: 4.87rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: white;
+}
+
+.text-miama{
+    font-family: 'Miama', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 5.87rem;
+    font-weight: 400;
+    
+    color: white;
+    
+}
+
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+}
+
+/* h3{
+    margin: 0px;
+    padding: 0px;
+
+} */
+
+
+.dot{
+
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    margin: 8px 12px;
+}
+
+.blur-title{
+    color: rgb(250, 250, 249);
+font-family: Inter;
+font-size: 1.5rem;
+font-weight: 900;
+line-height: 1.5rem;
+}
+
+.blur-description{
+color: rgba(239, 237, 232, 0.65);
+font-family: Inter;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5rem;
+}
+
+.banner-blur-card1{
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(5px);
+background: rgba(48, 48, 48, .54);
+padding: 20px 2px 20px 2px;
+width: 12.875rem;
+position: absolute;
+margin-left: 37.5rem;
+margin-top: 25rem;
+}
+
+.banner-blur-card2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(48, 48, 48, .54);
+    padding: 20px 2px 20px 2px;
+    width: 12.875rem;
+    position: absolute;
+    margin-left: 59.375rem;
+    margin-bottom: 12.5rem;
+    }
+
+    .blur-title2{
+        color: rgb(250, 250, 249);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-left: 25px;
+ 
+    }
+
+/* media query */
+
+@media screen and (max-width: 576px) {
+
+    /* nav{
+        flex-direction: column;
+    } */
+
+    .nav-link{
+        display: none;
+    }
+
+    .nav-logo{
+        display: block;
+    }
+
+    .nav-logo > img{
+        
+        width: 3.75rem;
+        height: 3.75rem;
+        margin: 0px 50px;
+    
+
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+
+    .banner-blur-card2{
+
+         margin-left: 20.5rem;
+margin-top: 45rem;
+    }
+  
+
+    .banner-blur-card1{
+
+        margin-left: -25.5rem;
+margin-top: 60rem;
+   }
+ 
+    
+}
