@@ -71,19 +71,15 @@ line-height: 22px;
     
   }
 
-
-
-
-
 .text-white{
    color:  rgb(255, 255, 255); 
 }
 .navbar{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 66.25rem;
-    height: 46px;
-    margin: 57px auto auto auto;
+    margin: 7.18rem auto;
 
 }
 .nav-border{
@@ -236,6 +232,7 @@ margin-top: 25rem;
     .nav-link{
         display: none;
     }
+  
 
     .nav-logo{
         display: block;
