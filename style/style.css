@@ -2,7 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 
 /* shared style */
-
+/* body{
+    width: 90rem;
+} */
 .btn-primary {
 
 border-radius: 42px;
@@ -40,8 +42,9 @@ line-height: 22px;
 
 .bg-black{
     background: linear-gradient(180.00deg, rgb(0, 0, 0),rgba(119, 119, 119, 0) 800%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-size: cover;
+   
+    
   
 }
 
@@ -58,7 +61,9 @@ line-height: 22px;
     text-align: justify;
 }
   /* ----- */
-
+.header{
+    overflow: hidden;
+}
 
 /* navbar stytle */
   .brand-name{
@@ -77,10 +82,11 @@ line-height: 22px;
 
 .navbar{
     display: flex;
-    width: 66.25rem;
+    max-width: 66.25rem;
     justify-content: space-between;
     align-items: center;
     margin: 3.18rem auto;
+    
 }
 .nav-border{
     box-sizing: border-box;
@@ -115,17 +121,21 @@ line-height: 22px;
 /* banner style */
 
 .banner{
-    width: 66.25rem;
+    max-width: 66.25rem;
     justify-content: space-between;
     align-items: center;
     margin:auto;
     margin-top: 8rem;
+    height: auto;
+    
 }
 .banner-content{
     width: 50%;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .banner-title{
 
@@ -135,7 +145,7 @@ line-height: 22px;
     color: white;
     padding: 0px;
     margin: 0px;
-
+   
 }
 
 .text-miama{
@@ -156,8 +166,11 @@ line-height: 22px;
     font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.03rem;
+    text-align: justify;
    
 }
+
+
 
 
 
@@ -200,6 +213,8 @@ line-height: 1.5rem;
     width: 12.875rem;
     margin-left: -6rem;
     margin-top: -10rem;
+
+
     }
 
     .banner-blur-card4{
@@ -223,66 +238,91 @@ line-height: 1.5rem;
     line-height: 30px;
     }
 
-/*
 
-.dot{
+    /* havit Section style */
 
-    width: 2.5rem;
-    height: 2.5rem;
-    background: rgb(230, 83, 60);
-    border-radius: 50%;
-    margin: 8px 12px;
-}
 
-.blur-title{
-    color: rgb(250, 250, 249);
-font-family: Inter;
-font-size: 1.5rem;
-font-weight: 900;
-line-height: 1.5rem;
-}
-
-.blur-description{
-color: rgba(239, 237, 232, 0.65);
-font-family: Inter;
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.5rem;
-}
-
-.banner-blur-card1{
-border: 1px solid rgba(255, 255, 255, 0.1);
-border-radius: 12px;
-backdrop-filter: blur(5px);
-background: rgba(48, 48, 48, .54);
-padding: 20px 2px 20px 2px;
-width: 12.875rem;
-position: absolute;
-margin-left: 37.5rem;
-margin-top: 25rem;
-}
-
-.banner-blur-card2{
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(5px);
-    background: rgba(48, 48, 48, .54);
-    padding: 20px 2px 20px 2px;
-    width: 12.875rem;
-    position: absolute;
-    margin-left: 59.375rem;
-    margin-bottom: 12.5rem;
+    .havits{
+        
+        background-color: rgb(0, 0, 0);    
+         margin-top: 30px;
     }
 
-    .blur-title2{
-        color: rgb(250, 250, 249);
-    font-family: Inter;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 30px;
-    margin-left: 25px;
- 
-    } */
+    .havits-inner{
+
+        max-width: 66.25rem;
+        background-color: rgb(46, 42, 42);
+        margin: auto;
+        padding-top: 60px;
+    }
+
+    .havit-content{
+        max-width: 671px;
+        margin: auto;
+    }
+
+    .havit-title{
+       
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .hevit-description{
+
+        color: rgba(255, 255, 255, 0.5);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-align: center;
+
+    }
+
+   
+
+
+    .havit-card-content{
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 100px;
+        padding: 40px;
+        width: 80%;
+        margin: auto;
+      
+        
+       
+    }
+   
+    .card img{
+        border-radius: 50%;
+        width: 100%;
+        
+    }
+
+    .card-title{
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: center;
+        margin:0px;
+        margin-top: 20px;
+        
+    }
+
+    .card-description{
+
+        color: rgba(255, 255, 255, 0.5);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
 
 /* media query */
 
@@ -315,10 +355,15 @@ margin-top: 25rem;
     .banner{
         flex-direction: column;
         width: 100%;
-       
-        
         
     }
+
+    .banner-title{
+
+        font-size: 3.87rem;
+       
+    }
+
     .banner-content{
         width: 100%;
     }
@@ -336,6 +381,28 @@ margin-top: 25rem;
             margin-left: 11rem;
             margin-top: 10rem;
             }
+
+
+            .havit-card-content{
+
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+        
+            }
  
     
 }
+
+
+@media screen and (min-width: 576px) and (max-width: 999px){
+
+
+    .havit-card-content{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+
+}
+
