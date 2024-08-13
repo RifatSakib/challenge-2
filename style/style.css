@@ -2,9 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 
 /* shared style */
-/* body{
-    width: 90rem;
-} */
+body{
+    background-color: black;
+}
 .btn-primary {
 
 border-radius: 42px;
@@ -43,9 +43,7 @@ line-height: 22px;
 .bg-black{
     background: linear-gradient(180.00deg, rgb(0, 0, 0),rgba(119, 119, 119, 0) 800%);
   background-size: cover;
-   
-    
-  
+
 }
 
 .justify-center{
@@ -63,6 +61,8 @@ line-height: 22px;
   /* ----- */
 .header{
     overflow: hidden;
+    padding: 50px;
+    
 }
 
 /* navbar stytle */
@@ -243,9 +243,8 @@ line-height: 1.5rem;
 
 
     .havits{
-        
         background-color: rgb(0, 0, 0);    
-         margin-top: 30px;
+        padding: 50px;
     }
 
     .havits-inner{
