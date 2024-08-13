@@ -170,7 +170,9 @@ line-height: 22px;
    
 }
 
-
+.banner-img{
+    padding-left: 150px;
+}
 
 
 
@@ -322,6 +324,61 @@ line-height: 1.5rem;
         text-align: center;
     }
 
+
+/* Extra Section Style */
+
+.extra-mile{
+    max-width: 66.25rem;  
+    padding: 50px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin: 0 auto;
+    border: 2px solid rgb(226, 11, 11);
+}
+
+.extra-content{
+
+    margin: 0px 54px 54px 40px;
+    width: 27.5rem;
+}
+.extra-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 100%;
+    text-align: left;
+    margin: 10px auto;
+    
+}
+
+.extra-description{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 0.87rem;
+font-weight: 400;
+line-height: 1.5rem;
+letter-spacing: 0.3px;
+text-align: left;
+
+}
+
+
+.extra-img{
+    width: 50%;
+    margin: auto;
+}
+
+.extra-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.extra-btn{
+    margin-top: 40px;
+}
+
+
 /* media query */
 
 @media screen and (max-width: 576px) {
@@ -350,12 +407,18 @@ line-height: 1.5rem;
 
     }
 
+    /* banner media section */
+
     .banner{
         flex-direction: column;
         width: 100%;
         
     }
 
+    .banner-img{
+        padding:0px;
+    }
+  
     .banner-title{
 
         font-size: 3.87rem;
@@ -381,11 +444,39 @@ line-height: 1.5rem;
             }
 
 
+
+           /* havit media section */
+
             .havit-card-content{
 
                 display: grid;
                 grid-template-columns: repeat(1,1fr);
         
+            }
+
+
+
+            /* extra section media  */
+
+            .extra-mile{
+                flex-direction: column;
+              
+                
+            }
+            
+        
+            .extra-content{
+                width: 100%;
+                margin:auto
+            }
+        
+            .extra-img{
+                width: 100%;
+                margin: 20px auto;
+            }
+
+            .extra-btn{
+                width: 100%;
             }
  
     
@@ -401,6 +492,56 @@ line-height: 1.5rem;
         grid-template-columns: repeat(2,1fr);
        
     }
+
+
+    .extra-img{
+
+       
+      height: 319px;
+      margin: auto;
+    }
+    .extra-img img{
+
+       
+        height: 100%;
+        margin: 0px;
+      }
+
+     
+
+/* banner part */
+
+      .banner{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .banner-img{
+        padding:0px;
+    }
+  
+   
+
+    .banner-content{
+        width: 100%;
+    }
+    
+
+
+    .banner-blur-card3{
+
+        margin-left: 0.5rem;
+        margin-top: -10rem;
+        }
+    
+        .banner-blur-card4{
+            
+            margin-left: 11rem;
+            margin-top: 10rem;
+            }
+
+
 
 }
 
