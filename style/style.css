@@ -379,6 +379,35 @@ text-align: left;
 }
 
 
+/* bmi part 1 */
+
+.bmi-1{
+    max-width: 41.93rem;
+    margin: 0 auto;
+    padding-top: 78px;
+}
+
+.bmi1-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+    margin: 0px;
+
+}
+
+.bmi1-description{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 0.87rem;
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+}
+
+
 /* media query */
 
 @media screen and (max-width: 576px) {
@@ -479,7 +508,21 @@ text-align: left;
                 width: 100%;
             }
  
+
+            /* bmi part1 */
+
+            .bmi-1{
+                width: 100%;
+                margin: auto;
+                padding:auto;
+            }
     
+
+            .bmi1-title{
+                width: 100%;
+            
+            }
+            
 }
 
 
@@ -494,20 +537,6 @@ text-align: left;
     }
 
 
-    .extra-img{
-
-       
-      height: 319px;
-      margin: auto;
-    }
-    .extra-img img{
-
-       
-        height: 100%;
-        margin: 0px;
-      }
-
-     
 
 /* banner part */
 
@@ -542,6 +571,40 @@ text-align: left;
             }
 
 
+            .extra-content{
 
+                margin: 0px;
+                padding-right: 20px;
+            }
+            .extra-img{
+
+       
+                height: 19.93rem;
+                width: 16rem;
+                margin: auto;
+              }
+              .extra-img img{
+          
+                 
+                  height: 100%;
+                  margin: 0px;
+              
+                }
+          
+
+                      /* bmi part1 */
+
+            .bmi-1{
+                width: 100%;
+                margin: 0 0;
+              
+            }
+    
+            .bmi1-title{
+                width: 100%;
+            
+            }
+            
+               
 }
 
