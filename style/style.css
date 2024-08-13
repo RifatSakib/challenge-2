@@ -61,7 +61,6 @@ line-height: 22px;
   /* ----- */
 .header{
     overflow: hidden;
-    padding: 50px;
     
 }
 
@@ -329,7 +328,7 @@ line-height: 1.5rem;
 
 .extra-mile{
     max-width: 66.25rem;  
-    padding: 50px;
+    padding: 18px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
     margin: 0 auto;
