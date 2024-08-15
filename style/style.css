@@ -2,6 +2,12 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 
 /* shared style */
+*{
+    margin: 0px;
+    padding: 0px 3px;
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
 }
@@ -86,6 +92,7 @@ line-height: 22px;
     align-items: center;
     margin: 3.18rem auto;
     
+    
 }
 .nav-border{
     box-sizing: border-box;
@@ -166,6 +173,7 @@ line-height: 22px;
     line-height: 1.5rem;
     letter-spacing: 0.03rem;
     text-align: justify;
+    padding: 20px 10px ;
    
 }
 
@@ -382,7 +390,7 @@ text-align: left;
 .bmi-1{
     max-width: 41.93rem;
     margin: 0 auto;
-    padding-top: 78px;
+    padding:50px 0px;
 }
 
 .bmi1-title{
@@ -479,12 +487,12 @@ text-align: left;
 
 
 input[type="text"]{
-height: .625rem;
 border-radius: 5px;
-max-width: 95%;
+width: 100%;
 border: none;
  padding: 15px;
- background-color: #383838; /* Dark gray input background */
+margin-right: 0px;
+  background-color: #383838; /* Dark gray input background */
  color:rgba(255, 255, 255, 0.6);
 font-size: 1rem;
 font-weight: 400;
@@ -498,13 +506,28 @@ line-height: 1.187rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
+    width: 100%;
     padding-bottom: 40px;
 }
 
 
-      .type-2{
+      .type-1{
       
-        width: 100%;
+        padding: 10px;
+        margin: .1px;
+        border: none;
+        border-radius: 5px;
+        background-color: #383838; /* Dark gray input background */
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.187rem;
+
+    }
+
+    .type-2{
+      
+        
         padding: 10px;
         margin: .1px;
         border: none;
@@ -519,7 +542,6 @@ line-height: 1.187rem;
 
     #sex{
         grid-column: span 2;
-    
     }
 
 
@@ -744,6 +766,8 @@ width: 50%;
 
 @media screen and (max-width: 576px) {
 
+
+
     .navbar{
     
         width: 100%;
@@ -868,22 +892,9 @@ width: 50%;
 
             /* ---- */
 
-            input[type="text"]{
-               
-                 padding: 10px;
-                 
-               
+          
                 
-                }
-
-                
-      .type-2{
-      
-        width: 100%;
-        padding: 5px;
- 
-
-    }
+   
             
 
     .team-img{
@@ -921,6 +932,56 @@ width: 50%;
         padding-bottom: 80px;
     } 
 
+
+    .bmi-chart{
+        width: 100%;
+        padding: 5px;
+        
+        
+    }
+
+
+
+
+    .bmi-calculate{
+        max-width: 100%;
+        
+       
+      }
+
+      .bmi-cal-description{
+        margin: 20px auto;
+      }
+
+      .form-class{
+        max-width:100%;
+        margin: 0px;
+         
+      
+      }
+
+      .type-1{
+        max-width: 100%;
+        margin: 0px;
+        
+      }
+
+      .type-2{
+        max-width: 100%;
+        margin: 0px;
+      }
+   
+
+      input[type="text"]{
+        width: 100%;
+       
+        
+      }
+
+     .copy-des{
+        
+        font-size: 20px;
+     }
       
 }
 
@@ -1014,6 +1075,7 @@ width: 50%;
             .bmi-chart{
                 width: 100%;
                 
+                
             }
 
             .img{
@@ -1046,7 +1108,29 @@ width: 50%;
           
         
            
+
+      .bmi-calculate{
+        max-width: 100%;
+      }
+     
+      .bmi-cal-description{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .form-class{
+        max-width:  100%;
+      }
+
+      .type-1{
+        max-width: 100%;
+      }
    
+
+      input[type="text"]{
+        max-width: 100%;
+      }
                
 }
 
